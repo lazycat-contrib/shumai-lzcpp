@@ -21,13 +21,13 @@ images:
   - id: shumai
     target: service
     service: shumai
-    source: docker.io/shumaiOne/shumai
+    source: docker.io/shumaione/shumai
     channel: stable
     sort: semver
     tag_regex: '^v?[0-9]+\.[0-9]+\.[0-9]+$'
     delivery:
       mode: mirror
-      image_template: docker.1ms.run/shumaiOne/shumai:{tag}
+      image_template: docker.1ms.run/shumaione/shumai:{tag}
 
 stores:
   official:
