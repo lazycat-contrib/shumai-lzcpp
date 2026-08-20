@@ -5,7 +5,6 @@ application:
   upstreams:
     - location: /
       backend: http://shumai:3000/
-
 services:
   postgres:
     # pgvector/pgvector:pg18
@@ -26,7 +25,7 @@ services:
       retries: 5
   shumai:
     # shumaione/shumai:0.3.9
-    # upstream: shumaione/shumai:0.3.9
+    # upstream: docker.io/shumaione/shumai:0.3.9
     image: docker.1ms.run/shumaione/shumai:0.3.9
     depends_on:
       - postgres
@@ -39,7 +38,6 @@ services:
       - AWS_ENDPOINT_URL_S3=http://localhost:3000
       - BETTER_AUTH_SECRET={{ stable_secret "better_auth_secret" }}
       - ENABLE_WEAKER_NESTED_SANDBOX=true
-
-usage: |
+usage: |-
   打开后，Shumai 会自动完成数据库初始化，首次使用稍等片刻即可进入。
   所有媒体文件保存在应用数据目录中，升级应用不会丢失。
