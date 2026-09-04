@@ -1,5 +1,5 @@
 package: community.lazycat.app.shumai
-version: 0.4.1
+version: 0.4.2
 name: Shumai
 description: "AI-native, open-source Frame.io alternative for creative collaboration."
 min_os_version: 1.5.0
