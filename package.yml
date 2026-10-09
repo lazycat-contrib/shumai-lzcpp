@@ -1,4 +1,5 @@
 package: community.lazycat.app.shumai
+license: MIT
 version: 0.5.1
 name: Shumai
 description: "AI-native, open-source Frame.io alternative for creative collaboration."
